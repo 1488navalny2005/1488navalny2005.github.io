@@ -15,7 +15,7 @@ nextLevel model = case model.level of
                       3 -> Just 1000
                       4 -> Just 5000
                       5 -> Just 15000
-                      6 -> Just (10 ^ 10 ^ 10) -- ибо нехуй      > 10 ^ 10 ^ 10
+                      6 -> Just (50000) -- ибо нехуй      > 10 ^ 10 ^ 10 аркаша лоъх
                       _ -> Nothing             --                  Infinity : number
                       
 
@@ -42,12 +42,12 @@ updateLevel model =
 
 incByLevel model =
     case model.level of
-        1 -> 1
-        2 -> 5
-        3 -> 10
-        4 -> 15
-        5 -> 1488
-        _ -> 42 -- ХЗ
+        1 -> 777
+        2 -> 777
+        3 -> 777 -- сасай лалка
+        4 -> 777
+        5 -> 777
+        _ -> 1488 -- ХЗ
     
 update msg model =
   case msg of
