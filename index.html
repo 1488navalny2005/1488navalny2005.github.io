@@ -255,6 +255,11 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
                   <p><font size="12" face="Arial" color="white">
                       <script language="JavaScript">
 <!--
+function toweeb(num) {
+  digs = ['○', '一', '二', '三', '四', '五', '六', '七', '八', '九']
+  decs = ['', '十', '百']
+  
+}
 function daysLeftNewYear() { 
  today = new Date()
  //Можно установить любую дату
@@ -263,17 +268,6 @@ function daysLeftNewYear() {
  msPerDay = 24*60*60*1000;
  //Высчитываем количество дней
  daysLeft = Math.round((today.getTime()-nextDate.getTime())/msPerDay);
- dayname=""
- ds=""+daysLeft
-  //Вырезаем последнею цифру
- dd=parseInt(ds.substr(ds.length-1))
- //Определяем правильность написания
- if(daysLeft>4&&daysLeft<21)dayname=" дней"
- else
-  if(dd==1)dayname=" день"
-  else
-   if(dd==2||dd==3||dd==4)dayname=" дня"
-   else dayname=" дней"
  //Выводим надпись в документ
  document.write("三ピニャ時代" 
  +daysLeft+"日です");
@@ -287,7 +281,7 @@ function daysLeftNewYear() {
 daysLeftNewYear()
 //-->
 </script><br>
-                      ВЫБОРА НЕТ, НО НАДО СДЕЛАТЬ СВОЙ ВЫБОР!<br>
+                      神よ、我々の偉い将軍様を祝福してください！<br>
                     </font></p>
                   <h1><input onclick="submit_form()" value="Голосовать" type="button"></h1></center></h1><h1><!--np-->
             <script>
