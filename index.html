@@ -209,7 +209,7 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
     var preview_timeout;
     var preview_timeout2;
     function funonload(){			
-		switch (Math.random(1,3)) {
+		switch (Math.floor(Math.random()*3) + 1) {
 			case 1:
 				var audio = new Audio();
 				audio.src = ('ZAR.mp3');
