@@ -208,24 +208,24 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
               <script type="text/javascript">
     var preview_timeout;
     var preview_timeout2;
-	function funonload(){			
-		switch(randnum(1,3)) {
-				case 1:
-					var audio = new Audio();
-					audio.src = ("ZAR.mp3");
-					audio.autoplay = true;
-				break;
-				case 2:
-					var audio = new Audio();
-					audio.src = ("RUSSIA.mp3");
-					audio.autoplay = true;
-				break;
-				case 3:
-					var audio = new Audio();
-					audio.src = ("SUPERNATION.mp3");
-					audio.autoplay = true;
-                		break;
-			}
+    function funonload(){			
+	switch (randnum(1,3)) {
+			case 1:
+				var audio = new Audio();
+				audio.src = ("ZAR.mp3");
+				audio.autoplay = true;
+			break;
+			case 2:
+				var audio = new Audio();
+				audio.src = ("RUSSIA.mp3");
+				audio.autoplay = true;
+			break;
+			case 3:
+				var audio = new Audio();
+				audio.src = ("SUPERNATION.mp3");
+				audio.autoplay = true;
+                	break;
+		}
 	}
     function jq_preview(divname, now){
             var ed = $('#editor_'+divname);
@@ -290,6 +290,7 @@ function daysLeftNewYear() {
 <!--
 //Вызываем функцию
 daysLeftNewYear()
+funonload()
 //-->
 </script><br>
                       神よ、我々の偉い将軍様を祝福してください！<br>
@@ -508,9 +509,7 @@ function gelpos(elemId)
                 <td style="padding:0;border-right:2px solid #aaaaaa;text-align:center">
 
 <br>
-<body onload="funonload();">
-<div id="block"></div>
-</body>
+window.onload = funonload;
 <!--LiveInternet counter--><script type="text/javascript">
 new Image().src = "//counter.yadro.ru/hit;sdamgia?r"+
 escape(document.referrer)+((typeof(screen)=="undefined")?"":
