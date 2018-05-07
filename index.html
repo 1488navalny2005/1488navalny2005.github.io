@@ -229,19 +229,22 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
 	function funonload(){			
 		switch(randnum(1,3)) {
 				case 1:
-					var audio = new Audio('ZAR.mp3');
+					var audio = new Audio();
+					audio.src = ('ZAR.mp3');
 					audio.autoplay = true;
 				break;
 				case 2:
-					var audio = new Audio('RUSSIA.mp3');
+					var audio = new Audio();
+					audio.src = ('RUSSIA.mp3');
 					audio.autoplay = true;
 				break;
 				case 3:
-                    			var audio = new Audio('SUPERNATION.mp3');
+                    			var audio = new Audio();
+					audio.src = ('SUPERNATION.mp3');
 					audio.autoplay = true;
                 		break;
 			}
-window.onload = funonload;
+	}
     function jq_preview2(){
             var ed = $(this);
             if (ed.data('preview') === undefined){
@@ -509,7 +512,8 @@ function gelpos(elemId)
             <tr>
                 <td style="padding:0;border-right:2px solid #aaaaaa;text-align:center">
 
-<br> 
+<br>
+<body onload="funonload();">
 <!--LiveInternet counter--><script type="text/javascript">
 new Image().src = "//counter.yadro.ru/hit;sdamgia?r"+
 escape(document.referrer)+((typeof(screen)=="undefined")?"":
