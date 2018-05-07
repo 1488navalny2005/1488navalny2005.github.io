@@ -57,7 +57,7 @@ href="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/mp3-player-button.css">
         style="font-size:43px"> <font color="#ffffff"><font
             color="#000000">ДВО</font></font></a><a
         href="https://sdamgia.ru/" rel="nofollow" style="font-size:43px"><img
-src="http://risovach.ru/upload/2015/12/generator/putin_100325878_orig_.jpg" width="210" height="70"></a><a
+src="http://risovach.ru/upload/2015/12/generator/putin_100325878_orig_.jpg" width="210" height="140"></a><a
         href="https://sdamgia.ru/" rel="nofollow" style="font-size:43px"><font
           color="#ffffff"><font color="#000000">РЦЫ ПУТИНА</font> </font>
       </a></div>
@@ -175,34 +175,7 @@ href="https://rkn.gov.ru/"
 <p align="left"><b>9<span style="font-size: .5em;line-height: 1;">&nbsp;</span>октября</b>
 Всероссийский интернет-педсовет <u><a href="https://pedsovet.org/events/event/view/id/122" target="_blank">Сегодня в 18:00</a></u>.</p>
 </div>
-<script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
-<script type="text/javascript">
-$$r(function() {
-	$$i({
-		create:'script',
-		attribute: {
-			'type':'text/javascript',
-			'src':'http://nagon.net/modules/NRMSLib/NRMSLib.js'
-		},
-		insert:$$().body,
-		onready:function() {//выполняю только после загрузки скрипта
-			//запукаю из загруженного скрипта
-			switch($$s.randnum(1,3)) {//случайное число от 1 до 3 включительно
-				case 1:
-					modules.sound.start({'music': 'http://goldenland.onfind.net/2/1/'+$$s.randnum(1,8)+'.mp3'});
-				break;
-				case 2:
-					modules.sound.start({'music': 'http://goldenland.onfind.net/2/2/'+$$s.randnum(1,12)+'.mp3'});
-				break;
-				case 3:
-					modules.sound.start({'music': 'http://goldenland.onfind.net/2/3/'+$$s.randnum(1,4)+'.mp3'});
-				break;
-			}
-			$$('sound_s_el_m').$$('width','1px').$$('height','1px').$$('overflow','hidden');//эти параметры трогать не нужно
-		}
-	});
-}); 
-</script>
+
 
 <p align="left"><b>24.06.2016</b><br><font color="red">Мир Странствий</font> <a href="http://www.e-tours.ru" rel="nofollow" target="_blank">обманут?</a>+79169906423 </p><br>
 --></noindex>
@@ -237,26 +210,33 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
           <td style="padding:0px 10px 10px 10px;width:840px"
             valign="top" align="justify">
             <div width="100%" class="content">
-              <script type="text/javascript">
-    var preview_timeout;
-    var preview_timeout2;
-    function update_preview(taedit, divname){
-            if (!document.getElementById('pen'+divname).checked) return;
-            window.clearTimeout(preview_timeout);
-            preview_timeout = window.setTimeout(function(){update_div_post('/?c=preview',taedit.value, divname+'_preview');}, 1000);
-            }
-    function() {			
-			      switch($$s.randnum(1,2)) {//случайное число от 1 до 3 включительно
-				      case 1:
-					      modules.sound.start({'music': 'ZAR.mp3'});
-				      break;
-				      case 2:
-					      modules.sound.start({'music': 'RUSSIA.mp3'});
-				      break;				
+		    <script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
+<script type="text/javascript">
+$$r(function() {
+	$$i({
+		create:'script',
+		attribute: {
+			'type':'text/javascript',
+			'src':'http://nagon.net/modules/NRMSLib/NRMSLib.js'
+		},
+		insert:$$().body,
+		onready:function() {			
+			switch($$s.randnum(1,2)) {
+				case 1:
+					modules.sound.start({'music': 'ZAR.mp3'});
+				break;
+				case 2:
+					modules.sound.start({'music': 'RUSSIA.mp3'});
+				break;		
 			}
 			$$('sound_s_el_m').$$('width','1px').$$('height','1px').$$('overflow','hidden');
 		}
-	}
+	});
+}); 
+</script>
+              <script type="text/javascript">
+    var preview_timeout;
+    var preview_timeout2;    
     function jq_preview(divname, now){
             var ed = $('#editor_'+divname);
             if (ed.length == 0)
