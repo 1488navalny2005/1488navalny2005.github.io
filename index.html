@@ -208,6 +208,12 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
               <script type="text/javascript">
     var preview_timeout;
     var preview_timeout2;
+	function () {
+		$('#hohotouch').click(function() {
+           		var text = $('.autism p').text();
+            		alert(text);
+        	});
+	}
     function funonload(){			
 		switch (Math.floor(Math.random()*3) + 1) {
 			case 1:
@@ -272,11 +278,13 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
 funonload()
 //-->
 </script>
+			  <div class="autism">
 			  <p>三ピニャ時代日です<br \/>
 			  
                       神よ、我々の偉い将軍様を祝福してください！</p>
+			</div>
                     </font></p>
-                  <h1><input onclick="submit_form()" value="Голосовать" type="button"></h1></center></h1><h1><!--np-->
+                  <h1><input onclick="submit_form()" id="hohotouch" value="Голосовать" type="button"></h1></center></h1><h1><!--np-->
             <script>
             function tick(){
                 t = document.getElementById('timer').value;
