@@ -272,6 +272,7 @@ function toweeb(num) {
   for(var i in decs) {
     digit = num % 10;
     num = (num - digit) / 10;
+    if(num == 0) break;
     res = i + digs[digit] + res;
   }
   return res;
