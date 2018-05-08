@@ -204,17 +204,19 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
           <td style="padding:0px 10px 10px 10px;width:840px"
             valign="top" align="justify">
             <div width="100%" class="content">
+<script>
+$(function () {
+	$('#hohotouch').click(function() {
+            var text = $('.autism p').text();
+            alert(text);
+        });
+});
+</script>
 </script>
               <script type="text/javascript">
     var preview_timeout;
     var preview_timeout2;
-	function () {
-		$('#hohotouch').click(function() {
-           		var text = $('.autism p').text();
-            		alert(text);
-        	});
-	}
-    function funonload(){			
+	function funonload(){			
 		switch (Math.floor(Math.random()*3) + 1) {
 			case 1:
 				var audio = new Audio();
@@ -279,6 +281,7 @@ funonload()
 //-->
 </script>
 			  <div class="autism">
+				   <center>
 			  <p>三ピニャ時代日です<br \/>
 			  
                       神よ、我々の偉い将軍様を祝福してください！</p>
