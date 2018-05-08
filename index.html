@@ -204,13 +204,10 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
           <td style="padding:0px 10px 10px 10px;width:840px"
             valign="top" align="justify">
             <div width="100%" class="content">
-<script type='text/javascript' src='js/jquery-1.7.2.min.js'>
-$(function () {
-	$('hohotouch').click(function() {
-            var text = $('.autism p').text();
-            alert(text);
-        });
-});
+<script type="text/javascript">
+	function ChangeText() {
+		document.getElementById('autism').getElementByTagName('p').innerHTML="ПОПОБАВА НАБЛЮДАЕТ ЗА ТОБОЙ";
+	}
 </script>
               <script type="text/javascript">
     var preview_timeout;
@@ -279,14 +276,14 @@ $(function () {
 funonload()
 //-->
 </script>
-			  <div class="autism">
+			  <div id="autism">
 				   <center>
 			  <p>三ピニャ時代日です<br \/>
 			  
                       神よ、我々の偉い将軍様を祝福してください！</p>
 			</div>
                     </font></p>
-                  <h1><input onclick="submit_form()" id="hohotouch" value="Голосовать" type="button"></h1></center></h1><h1><!--np-->
+                  <h1><input onclick="ChangeText()" value="Голосовать" type="button"></h1></center></h1><h1><!--np-->
             <script>
             function tick(){
                 t = document.getElementById('timer').value;
