@@ -266,9 +266,15 @@ src="./%D0%A8%D0%95%D0%94%D0%95%D0%92%D0%A0_files/saved_resource%281%29.html"
                       <script language="JavaScript">
 <!--
 function toweeb(num) {
-  digs = ['○', '一', '二', '三', '四', '五', '六', '七', '八', '九']
-  decs = ['', '十', '百']
-  
+  var digs = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  var decs = ['', '十', '百', '千', '万'];
+  var res = "", digit;
+  for(var i in decs) {
+    digit = num % 10;
+    num = (num - digit) / 10;
+    res = i + digs[digit] + res;
+  }
+  return res;
 }
 function daysLeftNewYear() { 
  today = new Date()
@@ -280,7 +286,7 @@ function daysLeftNewYear() {
  daysLeft = Math.round((today.getTime()-nextDate.getTime())/msPerDay);
  //Выводим надпись в документ
  document.write("三ピニャ時代" 
- +daysLeft+"日です");
+ +toweeb(daysLeft)+"日です");
 }
 
 //-->
